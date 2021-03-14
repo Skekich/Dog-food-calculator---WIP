@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    font-size: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+main {
+    font-size: 1.6rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.calculator-container {
+    display: grid;
+    gap: 1rem;
+    flex: row wrap;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: auto;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Markus Muhle dog food calc</title>
+</head>
+<body>
+    <main>
+        <h1>Markus Muhle dog food calculator</h1>
+            <div class="calculator-container">
+                <section class="feeding-section">
+                    <fieldset>
+                        <legend>Measurment Type</legend>
+                        <label>
+                            <input type="radio" name="feed-weight" value="kg">
+                            <div>
+                                <span>kg</span>
+                            </div>                
+                        </label>
+                        <label>
+                            <input type="radio" name="feed-weight" value="lbs">
+                            <div>
+                                <span>lbs</span>
+                            </div>
+                        </label>
+                    </fieldset>
+                    <div class="form-selection">
+                        <label>
+                            <span class="form-label">Weight of Dog</span>
+                            <select class="feeding-row-kg">
+                                <option class="kg" value="0">Select weight of dog</option>
+                                <option class="kg" value="1">2 kg</option>
+                                <option class="kg" value="2">5 kg</option>
+                                <option class="kg" value="3">7 kg</option>
+                                <option class="kg" value="4">10 kg</option>
+                                <option class="kg" value="5">15 kg</option>
+                                <option class="kg" value="6">20 kg</option>
+                                <option class="kg" value="7">25 kg</option>
+                                <option class="kg" value="8">30 kg</option>
+                                <option class="kg" value="9">35 kg</option>
+                                <option class="kg" value="10">40 kg</option>
+                                <option class="kg" value="11">45 kg</option>
+                                <option class="kg" value="12">50 kg</option>
+                                <option class="kg" value="13">60 kg</option>
+                                <option class="kg" value="14">70 kg</option>
+                                <option class="kg" value="15">80 kg</option>                
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-selection">
+                        <label>
+                            <span class="form-label">Activity Level</span>
+                            <select class="feeding-column-kg">
+                                <option class="kg" value="0">Select activity level</option>
+                                <option class="kg" value="1">Less Active</option>
+                                <option class="kg" value="2">Active</option>
+                            </select>
+                        </label>
+                    </div>
+            </section>
+            <section class="feeding-section">
+                <h3>Daily feeding quantites</h3>
+                <div>
+                    <output></output>            
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
