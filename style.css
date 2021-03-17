@@ -1,13 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Squada+One&display=swap');
+:root {
+    --font-color: #E94B3CFF;
+    --bg-color: #2D2926FF;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;    
+    font-style: normal;    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html {
     font-size: 10px;
+    color: var(--font-color);
     font-family: 'Bebas Neue', cursive;
 }
 
 main {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: normal;
+    background-color: var(--bg-color);
+    padding: 2rem 4rem;
 }
 
 h1 {
@@ -15,6 +34,68 @@ h1 {
     font-size: 3rem;
     margin: 0;
     padding: 2rem 0;
+}
+
+select {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+
+select > option {
+    font-family: inherit;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+label {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+fieldset {
+    border: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+input {
+   position: absolute;
+   left: -9999rem;
+   overflow: visible;
+}
+
+.weight-selector {
+    padding: 1rem 1rem;
+    flex: 0 0 6%;
+    transition: all 0.6s ease-in-out;
+}
+
+.weight-selector:hover {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+.weight-selector.clicked {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+}
+
+.form-selection {
+    padding-top: 1rem;
+}
+
+.form-label {
+    padding-right: 2rem;
+}
+
+#output {
+    color: inherit;
 }
 
 .calculator-container {
@@ -25,4 +106,8 @@ h1 {
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-template-rows: auto;
+}
+
+.quantites-section {
+    align-self: start;
 }

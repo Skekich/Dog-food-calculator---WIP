@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Markus Muhle dog food calc</title>
@@ -15,14 +15,14 @@
                     <h3>Calculate Daily Feeding Guide</h3>
                     <fieldset>
                         <legend>Measurment Type</legend>
-                        <label>
-                            <input type="radio" name="feed-weight" value="kg">
+                        <label class="weight-selector">
+                            <input type="radio" name="feed-weight" id="input" value="kg">
                             <div>
                                 <span>kg</span>
                             </div>                
                         </label>
-                        <label>
-                            <input type="radio" name="feed-weight" value="lbs">
+                        <label class="weight-selector">
+                            <input type="radio" name="feed-weight" id="input" value="lbs">
                             <div>
                                 <span>lbs</span>
                             </div>
@@ -57,18 +57,19 @@
                             <select class="feeding-column-kg">
                                 <option class="kg" value="0">Select activity level</option>
                                 <option class="kg" value="1">Less Active</option>
-                                <option class="kg" value="2">Active</option>
+                                <option class="kg" value="1.2">Active</option>
                             </select>
                         </label>
                     </div>
             </section>
-            <section class="feeding-section">
+            <section class="feeding-section quantites-section">
                 <h3>Daily feeding quantites</h3>
                 <div>
-                    <output></output>            
+                    <div id="output"></div>            
                 </div>
             </section>
         </div>
     </main>
+    <script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 </html>
