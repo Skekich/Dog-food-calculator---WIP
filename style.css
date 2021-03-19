@@ -69,10 +69,35 @@ input {
    overflow: visible;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.feeding-row-lbs {
+    grid-row: 1;
+    grid-column: 1;
+    visibility: hidden;
+}
+
+.feeding-row-lbs.selected-lbs {
+    visibility: visible;
+}
+
+.feeding-row-kg {
+    grid-row: 1;
+    grid-column: 1;
+    visibility: visible;
+}
+
+.feeding-row-kg.hidden-kg {
+    visibility: hidden;
+}
+
 .weight-selector {
     padding: 1rem 1rem;
     flex: 0 0 6%;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .weight-selector:hover {
